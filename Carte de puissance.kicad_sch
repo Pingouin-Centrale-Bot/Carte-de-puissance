@@ -18557,7 +18557,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MR30PB:MR30PB"
 			(at 180.34 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -21139,7 +21139,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MR30PB:MR30PB"
 			(at 242.57 133.35 0)
 			(hide yes)
 			(show_name no)
