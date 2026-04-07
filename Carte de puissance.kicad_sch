@@ -12248,7 +12248,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse_custom:CONN_3557-2_KEY"
+		(property "Footprint" "3557-2_fuseholder:FUSE_3557_simple"
 			(at 48.26 118.872 90)
 			(hide yes)
 			(show_name no)
@@ -12906,7 +12906,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse_custom:CONN_3557-2_KEY"
+		(property "Footprint" "3557-2_fuseholder:FUSE_3557_simple"
 			(at 22.86 23.622 90)
 			(hide yes)
 			(show_name no)
@@ -16194,7 +16194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse_custom:CONN_3557-2_KEY"
+		(property "Footprint" "3557-2_fuseholder:FUSE_3557_simple"
 			(at 48.26 191.262 90)
 			(hide yes)
 			(show_name no)
@@ -16777,7 +16777,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse_custom:CONN_3557-2_KEY"
+		(property "Footprint" "3557-2_fuseholder:FUSE_3557_simple"
 			(at 48.26 167.132 90)
 			(hide yes)
 			(show_name no)
@@ -21299,7 +21299,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse_custom:CONN_3557-2_KEY"
+		(property "Footprint" "3557-2_fuseholder:FUSE_3557_simple"
 			(at 48.26 143.002 90)
 			(hide yes)
 			(show_name no)
