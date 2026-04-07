@@ -1,0 +1,8 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "GSFP6901") (type "KiCad") (uri "${KIPRJMOD}/Components/GSFP6901/2026-04-02_16-58-35.kicad_sym") (options "") (descr ""))
+	(lib (name "WeAct_Buck") (type "KiCad") (uri "${KIPRJMOD}/Components/WeAct buck converter/WeAct_Buck.kicad_sym") (options "") (descr ""))
+	(lib (name "PAC1811") (type "KiCad") (uri "${KIPRJMOD}/Components/PAC1811/PAC1811.kicad_sym") (options "") (descr ""))
+	(lib (name "PS1240P02BT") (type "KiCad") (uri "${KIPRJMOD}/Components/PS1240P02BT/PS1240P02BT.kicad_sym") (options "") (descr ""))
+	(lib (name "R-78K3.3-0.5") (type "KiCad") (uri "${KIPRJMOD}/Components/R-78K-0.5/R-78K3.3-0.5.kicad_sym") (options "") (descr ""))
+)

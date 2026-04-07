@@ -28,3 +28,12 @@
 
 ### Possibilitées
  - Mesurer le courant sortant de la batterie
+
+## Configuration du pi
+```
+#dtparam=i2c_arm=on
+[all]
+# So the pi shutdowns when gpio4 is pulled low, for the PiEnergy module
+dtoverlay=gpio-shutdown,gpio_pin=3,active_low=1,gpio_pull=up
+dtoverlay=gpio-poweroff,gpiopin=4             
+```
