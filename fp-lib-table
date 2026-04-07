@@ -5,4 +5,5 @@
 	(lib (name "R-78K-0.5") (type "KiCad") (uri "${KIPRJMOD}/Components/R-78K-0.5") (options "") (descr ""))
 	(lib (name "PAC1811") (type "KiCad") (uri "${KIPRJMOD}/Components/PAC1811/PAC1811.pretty") (options "") (descr ""))
 	(lib (name "PS1240P02BT") (type "KiCad") (uri "${KIPRJMOD}/Components/PS1240P02BT") (options "") (descr ""))
+	(lib (name "Fuse_custom") (type "KiCad") (uri "${KIPRJMOD}/Fuse_custom.pretty") (options "") (descr ""))
 )
