@@ -7,4 +7,5 @@
 	(lib (name "PS1240P02BT") (type "KiCad") (uri "${KIPRJMOD}/Components/PS1240P02BT") (options "") (descr ""))
 	(lib (name "3557-2_fuseholder") (type "KiCad") (uri "${KIPRJMOD}/Components/3557-2_fuseholder") (options "") (descr ""))
 	(lib (name "MR30PB") (type "KiCad") (uri "${KIPRJMOD}/Components/MR30PB/MR30PB.pretty") (options "") (descr ""))
+	(lib (name "Molex") (type "KiCad") (uri "${KIPRJMOD}/Components/Molex/Molex.pretty") (options "") (descr ""))
 )

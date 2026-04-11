@@ -9327,30 +9327,6 @@
 			)
 		)
 	)
-	(global_label "VSENSE-"
-		(shape input)
-		(at 26.67 76.2 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2894c37b-a7ef-455c-9c79-2fb3d24fa7e5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.9763 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "UPDI"
 		(shape input)
 		(at 123.19 151.13 0)
@@ -9780,30 +9756,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "VSENSE-"
-		(shape input)
-		(at 139.7 25.4 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8778c4fd-97cf-4cdb-b7e2-da50ae19fe2a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.7 37.0937 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -11581,7 +11533,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal"
+		(property "Footprint" "Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal"
 			(at 58.42 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -16686,7 +16638,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal"
+		(property "Footprint" "Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal"
 			(at 58.42 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -21030,6 +20982,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+VSW")
+		(at 26.67 76.2 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "97741c58-93e5-4b0c-bdb9-abc1843355f8")
+		(property "Reference" "#PWR094"
+			(at 30.48 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+VSW"
+			(at 23.622 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+VSW\""
+			(at 26.67 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "058f19e9-54cc-4a48-b774-56d46df6875c")
+		)
+		(instances
+			(project "Carte de puissance"
+				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
+					(reference "#PWR094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 68.58 73.66 0)
 		(unit 1)
@@ -24166,7 +24196,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal"
+		(property "Footprint" "Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal"
 			(at 58.42 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -25451,7 +25481,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal"
+		(property "Footprint" "Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal"
 			(at 58.42 118.11 0)
 			(hide yes)
 			(show_name no)
