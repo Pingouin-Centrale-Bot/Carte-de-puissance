@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.6,
-          "height": 3.2,
-          "width": 3.2
+          "drill": 0.0,
+          "height": 1.4,
+          "width": 1.025
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -60,7 +60,80 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|101240000|108410000|66d37b3d-a11f-4ce2-83c5-196a6c6fd4a2|e28338b4-c02e-4834-a3b8-714417619736",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|101273100|109647572|77544c3a-99d1-4183-ab04-ab7fbeecc221|e28338b4-c02e-4834-a3b8-714417619736",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|103786215|108410000|66d37b3d-a11f-4ce2-83c5-196a6c6fd4a2|77544c3a-99d1-4183-ab04-ab7fbeecc221",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|106573333|115900000|a76af926-cc0a-490f-b5d7-bef734c896ce|ba337d8c-23a2-4393-84d8-acebcc57b23a",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|116312069|82827685|43d2205c-fbc8-4f47-9731-8b09bb889200|8cd7916e-2446-4973-9758-04025ef39399",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|117740000|108410000|66d37b3d-a11f-4ce2-83c5-196a6c6fd4a2|dc556b95-2c7c-4440-9ecb-8c5353a80e47",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|117773100|109647572|66d37b3d-a11f-4ce2-83c5-196a6c6fd4a2|e69dd6dd-ee0b-40ac-b74e-663a25a33d87",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|120286215|108410000|dc556b95-2c7c-4440-9ecb-8c5353a80e47|e69dd6dd-ee0b-40ac-b74e-663a25a33d87",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|121240000|115900000|20a8cd2b-233a-485c-a353-ff34ced61bf8|a76af926-cc0a-490f-b5d7-bef734c896ce",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|134240000|108410000|be6042a9-0b92-425f-91b3-6b9ed53abbae|dc556b95-2c7c-4440-9ecb-8c5353a80e47",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|134273100|109647572|dc556b95-2c7c-4440-9ecb-8c5353a80e47|dd52e497-887f-4cac-b608-301ff25f96ad",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|135062069|82827685|c150a977-eb06-4dc2-ab95-168c07611dee|f83e9c8d-ea51-4ae0-80ef-0aee2f2172ff",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|135906666|115900000|20a8cd2b-233a-485c-a353-ff34ced61bf8|35a2e458-954d-44b1-a470-d6a228f29218",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|136853835|108410000|be6042a9-0b92-425f-91b3-6b9ed53abbae|dd52e497-887f-4cac-b608-301ff25f96ad",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|158105000|66325000|15926afb-ecda-41ad-8437-96f7f9d1f6d0|9e735514-b162-4d2d-949f-ed029c17697e",
+          "Normal"
+        ],
+        [
+          "starved_thermal|103490000|64545000|75478532-742f-4264-abcb-b7be6bea59c8|1d54941d-278c-44fb-9053-32233bc67131|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|113672380|64020000|75478532-742f-4264-abcb-b7be6bea59c8|4ab10252-a4d3-42ca-bb0c-e6441b6769cb|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|113672380|64020000|75478532-742f-4264-abcb-b7be6bea59c8|4ab10252-a4d3-42ca-bb0c-e6441b6769cb|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -78,7 +151,7 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_filters_mismatch": "ignore",
+        "footprint_filters_mismatch": "warning",
         "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
@@ -100,16 +173,16 @@
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "error",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "ignore",
+        "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "ignore",
+        "starved_thermal": "error",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
