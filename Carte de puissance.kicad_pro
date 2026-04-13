@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.4,
-          "width": 1.025
+          "drill": 4.5,
+          "height": 6.0,
+          "width": 6.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -122,6 +122,14 @@
           "Normal"
         ],
         [
+          "courtyards_overlap|96105000|67631000|bb7f95fa-771e-4047-8602-4682473ec193|be6742ea-554c-42ca-bb94-dc69217a7d21",
+          "Normal"
+        ],
+        [
+          "courtyards_overlap|97562069|82827685|6b528b1f-bbe8-47fa-ab9b-7afc060e3f73|bb7f95fa-771e-4047-8602-4682473ec193",
+          "Normal"
+        ],
+        [
           "starved_thermal|103490000|64545000|75478532-742f-4264-abcb-b7be6bea59c8|1d54941d-278c-44fb-9053-32233bc67131|F.Cu",
           ""
         ],
@@ -151,7 +159,7 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_filters_mismatch": "warning",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
@@ -164,7 +172,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -177,9 +185,9 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",

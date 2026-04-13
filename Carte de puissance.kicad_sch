@@ -5,6 +5,146 @@
 	(uuid "11c20516-946c-4711-af8c-f1da2c6f5a05")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x01_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Pin"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
@@ -7458,8 +7598,8 @@
 		(uuid "54c7f16c-4ca1-413d-b904-4ebbab96b188")
 	)
 	(rectangle
-		(start 26.67 15.24)
-		(end 82.55 62.23)
+		(start 27.94 15.24)
+		(end 83.82 62.23)
 		(stroke
 			(width 0)
 			(type default)
@@ -7506,7 +7646,7 @@
 		(uuid "b34d0b21-5cb8-478d-acdc-d226e504b1dc")
 	)
 	(rectangle
-		(start 82.55 15.24)
+		(start 83.82 15.24)
 		(end 118.11 62.23)
 		(stroke
 			(width 0)
@@ -8004,6 +8144,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f75a0683-f7fd-4455-923c-f48875810abd")
+	)
+	(junction
+		(at 238.76 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdaea7e6-0696-466b-a907-19c500f76a9c")
 	)
 	(junction
 		(at 120.65 86.36)
@@ -8741,7 +8887,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 30.48) (xy 82.55 33.02)
+			(xy 82.55 25.4) (xy 82.55 33.02)
 		)
 		(stroke
 			(width 0)
@@ -8901,16 +9047,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 25.4) (xy 82.55 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c609c9a9-67bf-4922-8d89-aab9f41ab7c3")
-	)
-	(wire
-		(pts
 			(xy 231.14 115.57) (xy 234.95 115.57)
 		)
 		(stroke
@@ -9031,6 +9167,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 40.64) (xy 238.76 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5947e23-ec4d-4d2f-b2df-0e69ae893b1a")
+	)
+	(wire
+		(pts
 			(xy 107.95 144.78) (xy 107.95 146.05)
 		)
 		(stroke
@@ -9048,16 +9194,6 @@
 			(type default)
 		)
 		(uuid "d5f0aca7-d7a4-4dc5-8179-70dfd4457347")
-	)
-	(wire
-		(pts
-			(xy 238.76 35.56) (xy 238.76 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbdb6b68-7cd1-4a7d-a587-1c0b305fef7d")
 	)
 	(wire
 		(pts
@@ -9121,13 +9257,13 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 27.94) (xy 82.55 30.48)
+			(xy 238.76 35.56) (xy 238.76 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eab53d43-f14b-4438-8f18-83e6c05e8304")
+		(uuid "e5d4c703-1b15-40bc-aed1-65fe62ea52d9")
 	)
 	(wire
 		(pts
@@ -10660,7 +10796,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0406d188-fd5e-4916-a112-c940cc0cd23e")
-		(property "Reference" "U6"
+		(property "Reference" "U8"
 			(at 110.49 68.072 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10734,7 +10870,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U6")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -10752,7 +10888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05044279-b56a-41f3-afdb-a8639be684f1")
-		(property "Reference" "C12"
+		(property "Reference" "C9"
 			(at 124.46 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10816,7 +10952,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C12")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -10833,7 +10969,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "056aa64d-2ab9-4017-9444-7541dddbf34a")
-		(property "Reference" "D7"
+		(property "Reference" "D5"
 			(at 234.95 74.422 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10897,7 +11033,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "D7")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -10992,7 +11128,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07cb3236-1ec4-4971-b362-9847b2d130c9")
-		(property "Reference" "U11"
+		(property "Reference" "U10"
 			(at 30.48 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11063,7 +11199,86 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U11")
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+VSW")
+		(at 215.9 44.45 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07f8adaa-5932-400f-abee-602e6df471fe")
+		(property "Reference" "#PWR096"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+VSW"
+			(at 212.09 44.4499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+VSW\""
+			(at 215.9 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "614ff69d-0d57-49c1-bea4-10da4638523c")
+		)
+		(instances
+			(project "Carte de puissance"
+				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -11395,7 +11610,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c81cf92-70d9-484c-9b93-0b68f3bc5a9e")
-		(property "Reference" "Q1"
+		(property "Reference" "Q3"
 			(at 67.31 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11521,7 +11736,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "Q1")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -11539,7 +11754,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cfbdc99-a649-4950-b27c-70e52dfe36e0")
-		(property "Reference" "ALM3"
+		(property "Reference" "ALM2"
 			(at 59.69 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11613,7 +11828,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "ALM3")
+					(reference "ALM2")
 					(unit 1)
 				)
 			)
@@ -11710,7 +11925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ec50f38-79ed-4df6-9d01-03125b399b60")
-		(property "Reference" "R12"
+		(property "Reference" "R22"
 			(at 99.06 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11772,7 +11987,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R12")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -11789,7 +12004,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "10c3745e-bb42-4dd2-8fd7-ee2de9f01416")
-		(property "Reference" "R10"
+		(property "Reference" "R14"
 			(at 195.326 81.026 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11875,7 +12090,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R10")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -12206,7 +12421,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "18832117-dc6e-4092-a1e8-175b960216af")
-		(property "Reference" "F1"
+		(property "Reference" "F4"
 			(at 48.26 122.682 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12268,7 +12483,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "F1")
+					(reference "F4")
 					(unit 1)
 				)
 			)
@@ -12364,7 +12579,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a45f67b-e3e1-4ae9-aa50-7be1ef258310")
-		(property "Reference" "R24"
+		(property "Reference" "R10"
 			(at 175.514 170.434 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12450,7 +12665,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R24")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -12625,7 +12840,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1ea9b375-c1f5-49af-92d1-1eeaca08c0ba")
-		(property "Reference" "R2"
+		(property "Reference" "R6"
 			(at 134.62 19.05 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12686,7 +12901,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R2")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -12783,7 +12998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21de9e33-52e2-4b01-817b-0d25f26e982e")
-		(property "Reference" "R13"
+		(property "Reference" "R21"
 			(at 133.35 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12847,7 +13062,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R13")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -12864,7 +13079,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "23297fad-45a4-4d90-ba47-4ab0b53ba281")
-		(property "Reference" "F4"
+		(property "Reference" "F0"
 			(at 22.86 27.432 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12926,7 +13141,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "F4")
+					(reference "F0")
 					(unit 1)
 				)
 			)
@@ -13023,7 +13238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2340d741-36ef-42b1-b64d-e68605212cfd")
-		(property "Reference" "H4"
+		(property "Reference" "H3"
 			(at 186.69 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13081,7 +13296,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "H4")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -13178,7 +13393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b5f431b-7b1d-46ca-bd78-bf96270320a1")
-		(property "Reference" "U9"
+		(property "Reference" "U12"
 			(at 30.48 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13249,7 +13464,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U9")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -13266,7 +13481,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2de6dc68-a1b8-4b6a-9654-e32a6891d222")
-		(property "Reference" "C15"
+		(property "Reference" "C2"
 			(at 127.254 189.738 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13330,7 +13545,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C15")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -13426,7 +13641,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "32b21492-8217-41ba-aa28-7843b6eea00b")
-		(property "Reference" "U8"
+		(property "Reference" "U6"
 			(at 106.68 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13497,7 +13712,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U8")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -13515,7 +13730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33b7bd86-2e4c-4433-89f1-2f21850f8cb0")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 229.87 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13583,7 +13798,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -13869,7 +14084,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "35666464-f7d5-4384-8764-0d21b3374fa1")
-		(property "Reference" "C13"
+		(property "Reference" "C3"
 			(at 101.346 143.256 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13933,7 +14148,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C13")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -13951,7 +14166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3667f950-101c-4061-a2f5-f72972238c2a")
-		(property "Reference" "J9"
+		(property "Reference" "J1"
 			(at 149.225 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14019,7 +14234,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "J9")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -14115,7 +14330,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37c686c0-a8c2-4538-b9e5-656fb1028023")
-		(property "Reference" "R4"
+		(property "Reference" "R3"
 			(at 42.164 42.926 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14201,7 +14416,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -14376,7 +14591,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a111fda-1a6f-4ae3-a88d-858ebf85064e")
-		(property "Reference" "J4"
+		(property "Reference" "J2"
 			(at 149.352 132.842 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14449,7 +14664,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "J4")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -14623,7 +14838,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3bf78258-3745-4f3a-86ac-9c16a7b820f6")
-		(property "Reference" "U3"
+		(property "Reference" "U5"
 			(at 243.84 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14691,7 +14906,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U3")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -14785,7 +15000,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4090e5c4-c886-46f4-9abd-84677e82cb36")
-		(property "Reference" "U13"
+		(property "Reference" "U2"
 			(at 106.172 164.592 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14904,7 +15119,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U13")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -15240,7 +15455,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4c0fb5d1-12e0-431e-889b-793d9e4ff423")
-		(property "Reference" "D3"
+		(property "Reference" "D1"
 			(at 58.674 37.846 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15324,7 +15539,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "D3")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -15420,7 +15635,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "508cae0a-260d-4163-a0f6-d77667028522")
-		(property "Reference" "R23"
+		(property "Reference" "R17"
 			(at 153.924 176.276 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15506,7 +15721,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R23")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -15523,7 +15738,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "50e121be-7414-4bd9-98e7-2b6023b10e31")
-		(property "Reference" "R21"
+		(property "Reference" "R4"
 			(at 129.032 38.354 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15609,7 +15824,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R21")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -16051,7 +16266,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "53f67b2b-1cf0-4ef5-b4c2-36af7790a1dc")
-		(property "Reference" "R9"
+		(property "Reference" "R16"
 			(at 195.834 98.044 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16137,7 +16352,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R9")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -16311,7 +16526,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "58460985-2dbf-4c4f-a8f7-b4112f3c4ab6")
-		(property "Reference" "F5"
+		(property "Reference" "F1"
 			(at 48.26 195.072 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16373,7 +16588,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "F5")
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -16615,6 +16830,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 218.44 49.53 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5e7e6efd-866a-4107-8f89-feb0eca7d75b")
+		(property "Reference" "J10"
+			(at 218.44 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Pi external regulator"
+			(at 218.694 53.594 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MR30PB:MR30PB"
+			(at 218.44 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 218.44 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27d93570-f011-459b-8af1-ed3f939ad460")
+		)
+		(pin "3"
+			(uuid "f56dd051-f59d-43c0-abd6-f98304f419f1")
+		)
+		(pin "2"
+			(uuid "a4e36fb2-92f0-4fda-83da-d1270072d109")
+		)
+		(instances
+			(project "Carte de puissance"
+				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 180.34 127 180)
 		(unit 1)
@@ -16705,7 +17002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f5737d2-c9e6-4174-9e3c-3fced524e759")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 39.37 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16785,7 +17082,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U5")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -16803,7 +17100,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fe3ef35-8bd7-4cbf-947e-2b381e5d2b49")
-		(property "Reference" "ALM4"
+		(property "Reference" "ALM1"
 			(at 59.69 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16877,7 +17174,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "ALM4")
+					(reference "ALM1")
 					(unit 1)
 				)
 			)
@@ -16894,7 +17191,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6085a39e-eed4-48c5-875b-23b1a009a8cb")
-		(property "Reference" "F3"
+		(property "Reference" "F2"
 			(at 48.26 170.942 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16956,7 +17253,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "F3")
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -16973,7 +17270,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "61f2541a-04ba-465a-8979-4cad0e1419e7")
-		(property "Reference" "R25"
+		(property "Reference" "R13"
 			(at 252.222 155.956 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17059,7 +17356,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R25")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -17077,7 +17374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61fb1d98-5ee8-4f1f-bfdb-f652efd1dfaa")
-		(property "Reference" "R18"
+		(property "Reference" "R25"
 			(at 19.05 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17139,7 +17436,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R18")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -17157,7 +17454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "645f4ad5-c6d8-4d43-baa2-8a31dcc231b1")
-		(property "Reference" "R17"
+		(property "Reference" "R26"
 			(at 19.05 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17219,7 +17516,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R17")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -17474,7 +17771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68907db4-281d-4179-a36c-0004d0ba7ce8")
-		(property "Reference" "C11"
+		(property "Reference" "C1"
 			(at 29.21 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17538,7 +17835,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C11")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -17906,7 +18203,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "716968ec-da1c-4c1b-b269-b480f83579ab")
-		(property "Reference" "R7"
+		(property "Reference" "R12"
 			(at 72.644 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17992,7 +18289,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R7")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -18087,7 +18384,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7433e753-56d1-4c95-9ca7-6cf8089ff089")
-		(property "Reference" "R11"
+		(property "Reference" "R9"
 			(at 260.35 43.688 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18173,7 +18470,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R11")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -18346,7 +18643,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "75e1a5dc-5521-467d-a855-29e29d990af6")
-		(property "Reference" "J3"
+		(property "Reference" "J9"
 			(at 279.4 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18416,7 +18713,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "J3")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -18434,7 +18731,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76bd2505-3d93-4b18-8e01-236a66fa8234")
-		(property "Reference" "J7"
+		(property "Reference" "J6"
 			(at 45.72 157.4801 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18498,7 +18795,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "J7")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -18592,7 +18889,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7844b471-1a54-45a0-be22-cdc454017b33")
-		(property "Reference" "C1"
+		(property "Reference" "C7"
 			(at 163.576 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18656,7 +18953,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C1")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -18674,7 +18971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a0e0ff9-8c88-42a2-859b-ec1b2588b828")
-		(property "Reference" "J1"
+		(property "Reference" "J3"
 			(at 180.34 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18739,7 +19036,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "J1")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -19057,6 +19354,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 233.68 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7dd2e7e1-8ed2-4732-97a3-6db9658b4681")
+		(property "Reference" "J11"
+			(at 233.68 38.608 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "External enable"
+			(at 229.362 41.656 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 233.68 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 233.68 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d37aeb65-7fe5-4147-a3f1-8a210a328328")
+		)
+		(instances
+			(project "Carte de puissance"
+				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 163.83 185.42 0)
 		(unit 1)
@@ -19302,7 +19675,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "834995af-9a76-4d95-b05f-214737eb5eb8")
-		(property "Reference" "U10"
+		(property "Reference" "U11"
 			(at 30.48 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19373,7 +19746,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U10")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -19390,7 +19763,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "862ed166-ba36-42e9-8537-fdb124ba791d")
-		(property "Reference" "C7"
+		(property "Reference" "C12"
 			(at 259.08 117.348 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19454,7 +19827,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C7")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -19560,7 +19933,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87b00932-67b0-4c95-93dd-92aaf8cc4dae")
-		(property "Reference" "C4"
+		(property "Reference" "C15"
 			(at 206.248 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19624,7 +19997,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C4")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -19641,7 +20014,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87b3b6ee-825e-453f-bd50-9f646eeea0c5")
-		(property "Reference" "R1"
+		(property "Reference" "R5"
 			(at 48.006 35.306 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19727,7 +20100,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R1")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -19824,7 +20197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8898e776-4b92-493f-a946-e963c0564c8c")
-		(property "Reference" "Q7"
+		(property "Reference" "Q4"
 			(at 214.63 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19950,7 +20323,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "Q7")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -20204,7 +20577,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8cd5730d-d2b0-42aa-8b10-2046b84c72f6")
-		(property "Reference" "Q4"
+		(property "Reference" "Q5"
 			(at 232.41 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20294,7 +20667,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "Q4")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -20312,7 +20685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "900aea12-c92a-44dd-9479-5e29ca99bae0")
-		(property "Reference" "H3"
+		(property "Reference" "H4"
 			(at 186.69 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20370,7 +20743,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "H3")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -20387,7 +20760,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9281fa8a-0ef0-4569-9491-3d0305d71482")
-		(property "Reference" "R14"
+		(property "Reference" "R8"
 			(at 60.706 73.406 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20473,7 +20846,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R14")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -20725,7 +21098,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "962f3f43-add7-4b2e-9833-1f6130197f47")
-		(property "Reference" "R26"
+		(property "Reference" "R15"
 			(at 141.224 149.098 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20811,7 +21184,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R26")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -20905,7 +21278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96b401c6-0acd-479d-bb71-91290e2201e9")
-		(property "Reference" "Q3"
+		(property "Reference" "Q1"
 			(at 54.61 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20997,7 +21370,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "Q3")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -21334,7 +21707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b68bcfa-c335-4e9b-beb2-ec3b4b0ff555")
-		(property "Reference" "J2"
+		(property "Reference" "J4"
 			(at 242.57 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21399,7 +21772,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "J2")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -21494,7 +21867,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9ce000ef-5bac-45de-86f3-081cf4470478")
-		(property "Reference" "F2"
+		(property "Reference" "F3"
 			(at 48.26 146.812 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21556,7 +21929,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "F2")
+					(reference "F3")
 					(unit 1)
 				)
 			)
@@ -21717,7 +22090,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9fbb666e-4ea3-472c-b11f-c5b87d1b04c3")
-		(property "Reference" "C3"
+		(property "Reference" "C6"
 			(at 211.836 34.544 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21781,7 +22154,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C3")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -21798,7 +22171,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a23453f2-64f1-48b6-8eb3-c67d30a354a1")
-		(property "Reference" "C2"
+		(property "Reference" "C8"
 			(at 225.806 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21862,7 +22235,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C2")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -21880,7 +22253,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2589035-dce1-492c-867d-a3ad55f7a329")
-		(property "Reference" "D6"
+		(property "Reference" "D7"
 			(at 194.31 73.6599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21977,7 +22350,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "D6")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -22072,7 +22445,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5178fc6-5fed-4491-ba03-54b82bbea44f")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 244.094 34.036 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22136,7 +22509,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -22230,7 +22603,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9533ef6-aba3-4ddb-89b9-aa5e377d7376")
-		(property "Reference" "R5"
+		(property "Reference" "R7"
 			(at 93.726 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22316,7 +22689,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -22334,7 +22707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab5318d9-b57f-4707-a441-f28da36243a8")
-		(property "Reference" "U12"
+		(property "Reference" "U9"
 			(at 30.48 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22405,7 +22778,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U12")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -22423,7 +22796,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ac3061ae-0a7e-4043-a6b1-ad6c1047d9fa")
-		(property "Reference" "J5"
+		(property "Reference" "J8"
 			(at 45.72 109.2201 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22487,7 +22860,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "J5")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -22661,7 +23034,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b15a432a-3234-4166-86c5-8319561c2534")
-		(property "Reference" "C8"
+		(property "Reference" "C5"
 			(at 247.904 73.406 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22725,7 +23098,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C8")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -22742,7 +23115,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b46cd9fd-6408-40c6-9711-e014b88b8c4f")
-		(property "Reference" "C14"
+		(property "Reference" "C4"
 			(at 110.236 143.256 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22806,7 +23179,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C14")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -22824,7 +23197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b74105b1-f700-4db4-992b-be37f0f511b0")
-		(property "Reference" "R15"
+		(property "Reference" "R20"
 			(at 102.87 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22886,7 +23259,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R15")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -22983,7 +23356,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba779fdb-71a2-4725-bc80-fc60bd2c8927")
-		(property "Reference" "J8"
+		(property "Reference" "J5"
 			(at 45.72 181.6101 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23047,7 +23420,86 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "J8")
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 44.45 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bbed19a8-3521-464d-ad25-03b606d06efc")
+		(property "Reference" "#PWR097"
+			(at 218.44 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 218.44 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5dc54ecb-686c-4677-bb06-2a9f64695586")
+		)
+		(instances
+			(project "Carte de puissance"
+				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -23143,7 +23595,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bce8602d-3281-477a-bd2d-be4b2ec9e454")
-		(property "Reference" "R6"
+		(property "Reference" "R11"
 			(at 251.714 42.926 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23229,7 +23681,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R6")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -23246,7 +23698,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bede2ec5-d69e-4611-ab54-872ad72c0b1a")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 42.672 53.086 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23332,7 +23784,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -23350,7 +23802,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c14759e7-da0e-446f-8352-1336c2e777d4")
-		(property "Reference" "R20"
+		(property "Reference" "R23"
 			(at 19.05 172.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23412,7 +23864,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R20")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -23665,7 +24117,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c6b233ff-cab9-4a5c-b98c-94f310bc35c4")
-		(property "Reference" "C6"
+		(property "Reference" "C13"
 			(at 268.478 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23729,7 +24181,86 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C6")
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+VSW")
+		(at 220.98 44.45 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7c92b8f-b086-405b-b04a-6e28737b1d73")
+		(property "Reference" "#PWR098"
+			(at 217.17 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+V_PI"
+			(at 224.79 44.4499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+VSW\""
+			(at 220.98 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "29202fca-abd5-48c2-a8f4-67872f02fc2f")
+		)
+		(instances
+			(project "Carte de puissance"
+				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -23826,7 +24357,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c8e9b313-48a3-4331-829d-e0e0eaf0aff2")
-		(property "Reference" "D5"
+		(property "Reference" "D2"
 			(at 116.84 40.132 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23890,7 +24421,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "D5")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -24258,7 +24789,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d55e1dc0-b418-4e6a-8750-2a1429c42493")
-		(property "Reference" "R22"
+		(property "Reference" "R1"
 			(at 128.778 48.4907 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24344,7 +24875,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R22")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -24361,7 +24892,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d72b2b83-3eea-4d7d-b365-a1f937c00b3a")
-		(property "Reference" "ALM2"
+		(property "Reference" "ALM3"
 			(at 59.436 133.604 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24435,7 +24966,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "ALM2")
+					(reference "ALM3")
 					(unit 1)
 				)
 			)
@@ -24687,7 +25218,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dfe74f2f-6c11-490f-9f47-d29309d4bfe0")
-		(property "Reference" "D1"
+		(property "Reference" "D3"
 			(at 39.37 28.956 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24784,7 +25315,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "D1")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -24801,7 +25332,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e1d66f54-1505-428d-b595-920226c94a46")
-		(property "Reference" "R8"
+		(property "Reference" "R18"
 			(at 189.484 88.646 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24887,7 +25418,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R8")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -24983,7 +25514,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e64a565c-6bc5-460a-8c73-98cec1d25a94")
-		(property "Reference" "C5"
+		(property "Reference" "C11"
 			(at 197.104 117.856 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25047,7 +25578,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C5")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -25064,7 +25595,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6a36889-d06d-48f8-968a-54732869de02")
-		(property "Reference" "D2"
+		(property "Reference" "D6"
 			(at 68.326 37.846 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25148,7 +25679,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "D2")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -25165,7 +25696,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7c2e7cb-07ed-455d-ad1e-45d53aef043f")
-		(property "Reference" "C10"
+		(property "Reference" "C14"
 			(at 253.238 34.544 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25229,7 +25760,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "C10")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -25326,7 +25857,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9e9df2f-f418-4712-98ee-cd833f9d030a")
-		(property "Reference" "R16"
+		(property "Reference" "R19"
 			(at 118.11 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25388,7 +25919,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R16")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -25560,7 +26091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee1d8048-15aa-4a56-bd63-788e1fc2f505")
-		(property "Reference" "U2"
+		(property "Reference" "U4"
 			(at 181.61 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25628,7 +26159,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "U2")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -25646,7 +26177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef232644-127e-4991-9f47-ecdb990cf0bd")
-		(property "Reference" "ALM1"
+		(property "Reference" "ALM4"
 			(at 59.69 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25720,7 +26251,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "ALM1")
+					(reference "ALM4")
 					(unit 1)
 				)
 			)
@@ -25738,7 +26269,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef74477a-9766-4960-bfc3-6cbf6da769e1")
-		(property "Reference" "R19"
+		(property "Reference" "R24"
 			(at 19.05 148.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25800,7 +26331,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "R19")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -26126,7 +26657,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f4443bac-c0e0-45d2-a8b1-375985668a9d")
-		(property "Reference" "J6"
+		(property "Reference" "J7"
 			(at 45.72 133.3501 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26190,7 +26721,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "J6")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -26362,7 +26893,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f95ccddf-a9bc-4e0a-acb5-06421b80f5db")
-		(property "Reference" "Q8"
+		(property "Reference" "Q7"
 			(at 166.37 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26454,7 +26985,7 @@
 		(instances
 			(project "Carte de puissance"
 				(path "/11c20516-946c-4711-af8c-f1da2c6f5a05"
-					(reference "Q8")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
