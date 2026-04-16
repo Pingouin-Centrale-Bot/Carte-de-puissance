@@ -6,7 +6,7 @@
 	(property "Reference" "REF**"
 		(at -0.555 -7.889 0)
 		(layer "F.SilkS")
-		(uuid "5243e884-e118-4050-9a3a-d04bb77ec965")
+		(uuid "2c8a7f49-9274-4d5a-8fa0-ec22c0283607")
 		(effects
 			(font
 				(size 1.4 1.4)
@@ -17,7 +17,7 @@
 	(property "Value" "XDCR_PS1240P02BT"
 		(at 9.224 8.111 0)
 		(layer "F.Fab")
-		(uuid "081b3d74-f977-47f2-b7c5-36efc7046962")
+		(uuid "168d70a0-abd5-4255-919b-97e803f4ff33")
 		(effects
 			(font
 				(size 1.4 1.4)
@@ -29,7 +29,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1ba6280e-9bea-4b3e-8a95-89f16fe2c12e")
+		(uuid "077e6111-a8b1-4b0b-a4b3-374dd85ead35")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,7 +40,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a4c782d4-8077-4637-a418-1f2697d70da4")
+		(uuid "ac0c70cc-79d0-4603-9ddd-6d4c0b9af8ce")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -58,7 +58,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "c3d81693-5483-42b1-8e8d-2947dd8a0bda")
+		(uuid "1e5932f6-b064-4973-bc65-3e4542d73a11")
 	)
 	(fp_circle
 		(center 0 0)
@@ -69,7 +69,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "b71d7c53-e810-407a-aa52-b4296032e36d")
+		(uuid "8fb7b922-69b0-4d11-bb22-58e592752756")
 	)
 	(fp_circle
 		(center 0 0)
@@ -80,7 +80,7 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "a3396f39-dff7-4205-84b1-d9b0bf63bcec")
+		(uuid "67e475cb-8337-4d06-b2fb-4ac1d4ad42c2")
 	)
 	(pad "1" thru_hole circle
 		(at -2.5 0)
@@ -88,7 +88,7 @@
 		(drill 0.85)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "d107a038-dbd7-40b2-8804-8fc000c4d47d")
+		(uuid "947a20fc-cc02-4dfe-bf8c-2fb4d9a94db1")
 	)
 	(pad "2" thru_hole circle
 		(at 2.5 0)
@@ -96,7 +96,18 @@
 		(drill 0.85)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "ea3a2fde-e8e5-4e77-ba52-d4d3425db5ca")
+		(uuid "ca5c545d-6cfa-4f2f-88a8-b77b4a338e81")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/Components/PS1240P02BT/PS1240P02BT.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -90)
+		)
+	)
 )
