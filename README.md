@@ -33,7 +33,11 @@
 ```
 #dtparam=i2c_arm=on
 [all]
-# So the pi shutdowns when gpio4 is pulled low, for the PiEnergy module
+# So the pi shutdowns when gpio4 is pulled low
 dtoverlay=gpio-shutdown,gpio_pin=3,active_low=1,gpio_pull=up
+# So the pi 
 dtoverlay=gpio-poweroff,gpiopin=4             
 ```
+
+## Problèmes rencontrés
+- [] Il faut mettre une résistance en parallèle des diodes pour le contrôle des mosfets.
