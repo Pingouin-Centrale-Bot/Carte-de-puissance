@@ -208,16 +208,18 @@ void setup()
   // BAU (Emergency Button)
   pinModeFast(BAU_IN, INPUT);
   pinModeFast(BAU_OUT, OUTPUT);
-  digitalWriteFast(BAU_OUT, BAU_state);
-  digitalWriteFast(EN_EXTPWR, BAU_state);
   attachInterrupt(BAU_IN, handle_bau, FALLING);
   if (digitalReadFast(BAU_IN))
   {
     BAU_state = IDLE_BAU;
+    digitalWriteFast(EN_EXTPWR, HIGH);
+    digitalWriteFast(BAU_OUT, HIGH);
   }
   else
   {
     BAU_state = POWERCUT;
+    digitalWriteFast(EN_EXTPWR, LOW);
+    digitalWriteFast(BAU_OUT, LOW);
   }
 
   // Pi Communications
