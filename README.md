@@ -30,6 +30,7 @@
  - Mesurer le courant sortant de la batterie
 
 ## Configuration du pi
+Dans `/boot/firmware/config.txt` sur ubuntu :
 ```
 #dtparam=i2c_arm=on
 [all]

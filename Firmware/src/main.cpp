@@ -22,6 +22,7 @@ enum BattState
   POWERING_OFF_WAITING_FOR_PI
 };
 volatile BattState batt_state = START_BATT_STATE;
+volatile unsigned long powering_off_enter_time = 0;
 
 enum BAUState
 {
@@ -48,7 +49,7 @@ void handle_power_btn()
 {
   if (millis() >= 1500 && batt_state < POWERING_OFF_ENTER) // To prevent issues if pressed too soon with debouncing
   {
-    batt_state = POWERING_OFF_ENTER;
+    powering_off_enter_time = millis();
   }
 }
 
@@ -175,6 +176,8 @@ bool updateBattState() // Will unplug if battery critical
 
 void setup()
 {
+  while (millis() < 1000); // To prevent accidental power on
+
   Serial1.begin(115200);
 
   // Power control
@@ -248,6 +251,22 @@ void loop()
 
   static bool state_changed = true;
 
+  if (powering_off_enter_time > 0)
+  {
+    if (!digitalReadFast(PWR_BTN))
+    {
+      if (current - powering_off_enter_time > 1000)
+      {
+        batt_state = POWERING_OFF_ENTER;
+        state_changed = true;
+      }
+    }
+    else
+    {
+      powering_off_enter_time = 0;
+    }
+  }
+
   // LED and main power control
   switch (batt_state)
   {
@@ -302,7 +321,7 @@ void loop()
     tone(BUZZER, MEDIUM_NOTE, 200);
     // no break on purpose, to continue for next state when using NINJA
   case POWERING_OFF_WAITING_FOR_PI:
-    if (digitalReadFast(POWEROFF_PI) or NINJA)
+    if ((!digitalReadFast(POWEROFF_PI)) or NINJA)
     {
       playMsg(NORMAL_OFF_MSG);
       unplugBattery(); // Does not return
@@ -315,6 +334,7 @@ void loop()
     if (current - last_led_change > 500)
     {
       setRGB(led_state ? Black : Blue);
+      digitalWriteFast(SHUTDOWN_PI, led_state ? LOW : HIGH); // to ask repeatidly the pi to power off
       led_state = !led_state;
       last_led_change = current;
     }
